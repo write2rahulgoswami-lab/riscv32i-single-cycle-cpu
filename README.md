@@ -6,7 +6,7 @@
 
 <h1 align="center">RISC-V RV32I Single-Cycle CPU</h1>
 
-<p align="center">
+<p align="center"> 
   A 32-bit RISC-V processor implemented using SystemVerilog and RTL design principles
 </p>
 
