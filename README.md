@@ -102,6 +102,7 @@ mem/        # Program and machine-code files
 sim/        # ModelSim/Questa simulation scripts
 docs/       # Architecture diagrams and simulation results
 
+--- 
 
 🧪 Simulation
 
