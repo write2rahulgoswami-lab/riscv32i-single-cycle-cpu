@@ -6,40 +6,43 @@
 
 <h1 align="center">RISC-V RV32I Single-Cycle CPU</h1>
 
-<p align="center"> 
+<p align="center">
   A 32-bit RISC-V processor implemented using SystemVerilog and RTL design principles
 </p>
 
-A SystemVerilog implementation of a 32-bit RISC-V RV32I single-cycle processor. The project demonstrates the major components involved in a processor datapath, including instruction fetching, decoding, register operations, ALU computation, memory access, and control logic.
+A SystemVerilog implementation of a **32-bit RISC-V RV32I single-cycle processor**. The project demonstrates the major components involved in a processor datapath, including instruction fetching, decoding, register operations, ALU computation, memory access, and control logic.
 
 ---
-🚀 Overview
+
+## 🚀 Overview
 
 This project explores the internal operation of a RISC-V processor by implementing its datapath and control logic using modular SystemVerilog components.
 
-The processor follows a single-cycle architecture, where each instruction completes its execution within one clock cycle.
+The processor follows a **single-cycle architecture**, where each instruction completes its execution within one clock cycle.
 
-The project focuses on understanding the relationship between the RISC-V instruction set architecture (ISA) and its corresponding hardware implementation.
+The project focuses on understanding the relationship between the **RISC-V instruction set architecture (ISA)** and its corresponding hardware implementation.
 
+---
 
-🎯 Project Objectives
+## 🎯 Project Objectives
 
-* Study the RISC-V RV32I instruction set architecture
+* Study the **RISC-V RV32I instruction set architecture**
 * Understand instruction formats and bit-level decoding
 * Implement the processor datapath using SystemVerilog RTL
 * Design and integrate the major CPU functional units
 * Simulate instruction execution and analyze processor behavior
 * Understand how software instructions are translated into hardware operations
-  
 
-⚙️ Features
+---
 
-* ISA RISC-V RV32I
-* Architecture: Single-Cycle
-* HDL: SystemVerilog
-* Simulation: ModelSim / QuestaSim
+## ⚙️ Features
 
-✔ Supported Instruction Categories
+* **ISA:** RISC-V RV32I
+* **Architecture:** Single-Cycle
+* **HDL:** SystemVerilog
+* **Simulation:** ModelSim / QuestaSim
+
+### ✔ Supported Instruction Categories
 
 * R-type instructions
 * I-type arithmetic instructions
@@ -50,13 +53,15 @@ The project focuses on understanding the relationship between the RISC-V instruc
 * LUI
 * AUIPC
 
-✔ Memory
+### ✔ Memory
 
 * Instruction memory
 * Data memory
 * Byte-addressable memory organization
 
-🧠 CPU Architecture
+---
+
+## 🧠 CPU Architecture
 
 The processor is divided into multiple functional modules to keep the RTL design organized and easier to verify.
 
@@ -77,13 +82,15 @@ Major components include:
 
 Common instruction definitions, ALU operations, and control signals are organized in the SystemVerilog package:
 
-text
+```text
 risc_pkg.sv
+```
 
 This modular structure makes the design easier to understand, simulate, debug, and extend.
 
+---
 
-🖼️ CPU Datapath
+## 🖼️ CPU Datapath
 
 <p align="center">
   <img src="docs/architecture.png" width="600"/>
@@ -93,29 +100,30 @@ The datapath connects the instruction-fetch, decode, execute, memory, and write-
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
-bash
+```bash
 rtl/        # SystemVerilog RTL modules
 tb/         # Simulation testbench
 mem/        # Program and machine-code files
 sim/        # ModelSim/Questa simulation scripts
 docs/       # Architecture diagrams and simulation results
+```
 
---- 
+---
 
-🧪 Simulation
+## 🧪 Simulation
 
-▶ Running the Simulation
+### ▶ Running the Simulation
 
 Open the simulation directory and execute:
 
-bash
+```bash
 cd sim
 vsim -do run.do
+```
 
-
-🔍 Signals to Analyze
+### 🔍 Signals to Analyze
 
 During simulation, useful signals to observe include:
 
@@ -134,7 +142,7 @@ Waveform analysis can be used to verify that instructions propagate correctly th
 
 ## 📊 Simulation Results
 
-Fibonacci Program
+### Fibonacci Program
 
 The processor can be tested using a Fibonacci sequence program to verify arithmetic operations, register transfers, control flow, and memory interactions.
 
@@ -144,9 +152,9 @@ The processor can be tested using a Fibonacci sequence program to verify arithme
 
 ---
 
-💻 Example Program
+## 💻 Example Program
 
-Fibonacci Sequence Generator
+### Fibonacci Sequence Generator
 
 The example program demonstrates iterative computation using RISC-V instructions.
 
@@ -161,7 +169,7 @@ The resulting execution can be examined through the processor's register and mem
 
 ---
 
-🔧 Requirements
+## 🔧 Requirements
 
 To simulate the processor, you need:
 
@@ -171,7 +179,7 @@ To simulate the processor, you need:
 
 ---
 
-🧭 Possible Extensions
+## 🧭 Possible Extensions
 
 Future improvements could include:
 
@@ -185,16 +193,24 @@ Future improvements could include:
 
 ---
 
-👨‍💻 Author
+## 📜 License
 
-Rahul Goswami
+This project is distributed under the **MIT License**.
+
+Please retain the original project's license and attribution when redistributing or modifying the source code.
+
+---
+
+## 👨‍💻 Author
+
+**Rahul Goswami**
 
 Electronics & Instrumentation Engineering Student
 
 ---
 
-⭐ Learning Focus
+## ⭐ Learning Focus
 
-This project provides practical exposure to RISC-V architecture, SystemVerilog RTL design, processor datapaths, control logic, instruction decoding, and hardware simulation.
+This project provides practical exposure to **RISC-V architecture, SystemVerilog RTL design, processor datapaths, control logic, instruction decoding, and hardware simulation**.
 
 It serves as a foundation for further exploration of processor architecture, pipelining, verification, and digital hardware design.
